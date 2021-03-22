@@ -1,0 +1,119 @@
+body {
+  background: linear-gradient(#081221, #03080f);
+  color: #c1d1e8;
+  margin: 15%;
+  font-family: "Mulish", sans-serif;
+}
+
+.navbar {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact {
+  font-size: 24px;
+  margin: 2%;
+  position: relative;
+}
+
+.video {
+  font-size: 24px;
+  margin: 2%;
+}
+
+.scontact {
+  position: absolute;
+  top: -30px;
+  left: -25px;
+  opacity: 10%;
+  font-size: 45px;
+}
+
+.mainbody {
+  margin-top: 15%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+label {
+  color: #ffffff;
+  font-size: 11px;
+}
+
+input {
+  background-color: #182c47;
+  width: 100%;
+  color: #c1d1e8;
+}
+
+textarea {
+  background-color: #182c47;
+  width: 100%;
+  color: #c1d1e8;
+}
+
+button {
+  background-color: #5692e8;
+  color: #ffffff;
+  margin: 5px;
+  float: right;
+}
+
+h4 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+.mainbody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formbox {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+}
+
+.container {
+  display: flex;
+}
+
+.email {
+  margin-left: 5px;
+}
+
+.form {
+  background-color: #0e1a2b;
+  padding: 30px;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 701px) {
+  .navbar {
+    display: flex;
+  }
+
+  body {
+    margin: 5%;
+  }
+
+  .scontact {
+    font-size: 48px;
+  }
+
+  .mainbody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formbox {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+}

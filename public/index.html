@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" href="main.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>connectnow</title>
+  </head>
+
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div class="navbar">
+      <div class="video">
+        <span><a href="index.html">VIDEO GAMES</a></span>
+        <span class="svideo">VIDEO</span>
+      </div>
+      <div class="contact"><a href="contact.html">CONTACT</a></div>
+    </div>
+    <div class="mainbody">
+      <div class="filter">
+        <h4>Filter Results</h4>
+        <div class="name">
+          <label>Name(contains)</label>
+          <input type="text" id="name" value="Text string" />
+        </div>
+        <br />
+        <div class="tcontainer">
+          <div class="score">
+            <div class="scorelabel">
+              <label>Minimum Score</label>
+            </div>
+            <div class="scoreinput">
+              <input type="text" id="score" value="1-10" />
+            </div>
+          </div>
+
+          <div class="orderby">
+            <div class="orderlabel">
+              <label>Order By</label>
+            </div>
+            <div class="orderbody">
+              <div class="up">
+                <button>
+                  <i class="fa fa-arrow-up" style="font-size: 15px;"></i>
+                </button>
+              </div>
+              <div class="searchby">
+                <select id="searchby">
+                  <option value="volvo">Release Date</option>
+                  <option value="saab">Score</option>
+                  <option value="opel">Name</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="clear">
+            <button id="clear">Clear</button>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div id="root"></div>
+      </div>
+    </div>
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
